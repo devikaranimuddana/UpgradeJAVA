@@ -7,5 +7,4 @@
    unarchive:
     src: /tmp/jdk-8u201-linux-x64.tar.gz
     dest: /data/java
-	
 #Next step is to use your application to use java home as /data/java/jdk1.8.0_201/jre/bin/java
