@@ -1,0 +1,5 @@
+---
+- hosts: "{{ hosts }}"
+  roles:
+    - { role: '/usr/local/ansible/roles/UpgradeJAVA' }
+  become: true
