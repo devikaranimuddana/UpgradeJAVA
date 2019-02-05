@@ -1,0 +1,11 @@
+---
+ - name: java 9 rpm / download and checksum
+   get_url:
+    url: https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.tar.gz
+    dest: /tmp
+ - name: unarchive the downloaded package
+   unarchive:
+    src: /tmp/jdk-8u201-linux-x64.tar.gz
+    dest: /data/java
+	
+#Next step is to use your application to use java home as /data/java/jdk1.8.0_201/jre/bin/java
